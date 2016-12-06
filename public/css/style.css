@@ -1,0 +1,524 @@
+ body {
+	background-color: #e0e0e0; 
+}
+
+div.content {
+	margin: 1% auto 1% auto;
+	padding-right: 
+}
+
+/**/
+li.logo #logo-container {
+	margin: 5% auto;
+	width: 90%;
+}
+
+/**/
+div.userView {
+	width:80%;
+	height: 130px;
+	text-align: center;
+	margin: 30px auto 10px auto;
+}
+
+a#link-avatar{
+	width:100%;
+	height: 130px;
+	margin-bottom: 0;
+}
+
+img.circle {
+	width:70%;
+	margin:auto;
+}
+
+/**/
+div.userName p.userName{
+	font-size: 1.4em;
+	line-height: 1;
+	width:100%;
+	text-align: center;
+	color: #fff;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom:0;
+	padding-top: 0;
+}
+
+h6#userEmail{
+	color: #9ccc65;
+	text-align: center;
+}
+
+/**/
+div.search-wrapper{
+	background-color:  ;
+	width: 80%;
+	margin: 0 15%  20px 15%;
+}
+
+input#search.white-text {
+	font-size: 1em;
+	font-weight: 400;
+	width: 80%;
+}
+
+img#pesquisa.material-icons{
+	color: white;
+}
+
+/**/
+
+li.bold{
+	
+}
+li.bold a#sideMenu{
+	height: 45px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 5px auto 10px auto;
+	color: #fff;
+	padding-left: 35%;
+}
+
+hr{
+	margin-top: 5px;
+}
+li.bold i#sideMenuitem{
+	margin: auto;
+}
+
+li.boldlogos  div.logos{
+	padding: 0 20% 0 20%;
+	margin: 20% auto;
+	background-color: #fff;
+}
+
+img#menuSidebar{
+	width: 2.5em;
+	margin:25% auto;
+}
+
+img#dropOpcoes{
+	height: 2em ;
+	
+}
+
+a#dropbutton{
+padding-top: 20%;
+height: 65px;
+}
+
+.iconsDropdown1{
+	margin: 0 auto 0 30%;
+	width: 1.5em;
+}
+
+.iconsDropdown{
+	margin: auto;
+	width: 1.5em;
+}
+
+footer.rodape {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	bottom: 0;
+	padding-bottom: 20px;
+}
+
+
+/*Tela de cadastro e login */
+
+.divImage img#logo_owlknow {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+div.footer{
+	position: fixed;
+    bottom: 0px;
+  
+   }
+
+div.centralizado{
+	width: 60px;
+	margin: auto;
+	background-color: ;
+}
+
+ img#logo_footer{
+	margin: auto;
+ }
+a#btn-login{
+	margin-right: 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+img#loginIcon{
+	margin-top: 8%;
+	margin-right: 10px;
+}
+
+img#cadastroIcon{
+	margin-top: 5%;
+	margin-right: 10px;
+}
+a#menu-cadastro{
+	margin-left: 20px;
+}
+
+img#dropMenuCadastro{
+	width: 2.5em;
+	margin: auto;
+	
+}
+
+a.modal-trigger{
+	text-align: center;
+}
+
+div.cad {
+	border-radius: 30px;
+	height: 40px;
+	display: block;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+li input.validate {
+	width: 80%;
+	text-underline:none;
+	border-bottom: 0;
+    box-shadow: 0;
+    font-size: 1em;
+    font-weight: 600;
+    color: #424242;
+
+}
+
+li div.cad img.icones_cad{
+	margin-top: 8px;
+
+}
+
+button#btnCadastrar {
+	margin-top: 30px;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: 400;
+}
+
+
+ul#drop {
+  background-color: #;
+  margin: 0;
+  display: none;
+  min-width: 150px; /* Changed this to accomodate content width */
+  max-height: auto;
+  margin-left: 5px; /* Add this to keep dropdown in line with edge of navbar */
+  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+  opacity: 50;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  will-change: width, height;
+  text-align: center;
+}
+
+/*Pagina index*/
+
+div#chat{
+	margin:0 10px 0 20px;
+	padding: 20px 10px 20px 10px;
+	overflow: auto;
+
+}
+
+div#chat li {
+	list-style: none;
+	margin-bottom: 5px;
+	
+}
+
+div#div-messager{
+	height: 70px;
+	bottom: 40px;
+	position: fixed;
+	background-color: #e0e0e0;
+	margin-top: 10px;
+}
+
+div.emoji{
+	height: 55px;
+	margin-top: 10px;
+	margin-bottom:auto;	
+}
+
+div.div-background{
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom:auto;
+	border-radius: 10px;
+	position: ;
+	background: #fff;
+}
+
+div.button-div{
+	height: 55px;
+	margin-top: 8px;
+	margin-bottom:auto;
+	
+	
+}
+
+textarea#mensagem{
+	height: 50px;
+	width: 100%;
+	outline: none;
+	resize: none;
+	border: none;
+	overflow: auto;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+img.botaoEnviar{
+	width: 30px;
+	margin-top: 10px;
+}
+
+img.botaoEnviar:hover{
+	content: url('/img/enviarVerde.svg')
+}
+
+
+ul#slide-out{
+	width: 300px;
+	}
+
+div.updates{
+	width: 80%;
+	min-height: 150px;
+	max-height: 500px;
+	margin: auto;
+	color: #fff;
+	padding: 5px 5px 5px 5px;
+
+}
+
+img#updateIcon{
+	width: 30px;
+	margin-right: 5px;
+	margin-bottom: 0;
+}
+
+h6#updates{
+	margin-bottom: 5px;
+}
+
+li#msgBoasvindas{
+	color: #757575;
+	font-size: 1em;
+	margin-top: 0;
+	text-align: right;
+	font-weight: 500;
+}
+
+ul#atualizacoes li#atualizacoesUsers{
+	color: #fff;
+	font-size: 0.8em;
+	text-align: left;
+	margin: 0 auto 2px auto;
+}
+
+hr{
+	margin-bottom: 0;
+	height: 1px solid #fff;
+}
+
+span#user{
+	color: #558b2f;
+	margin-left: 10px;
+	vertical-align: 20px;
+	
+}
+
+p#msg{
+	margin-top: 0;
+	margin-left: 60px;
+	margin-right: 20px;
+	text-align: justify;
+	margin-bottom: 0;
+}
+
+img#user{
+	width: 50px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+img#emoticon{
+	width: 23px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+img#fileUp{
+	width: 23px;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+img#emoticon:hover{
+	content: url('/img/emoticonGreen.svg')
+}
+
+div.card-panel{
+	margin-right: 10px;
+	min-width: auto;
+	border-radius: 10px;
+}
+
+
+
+
+/* MODAL UPLOAD INDEX */
+img#owlkUp{
+	width: 150px;
+	margin: 0 25px 0 25px;
+
+}
+
+div#img-owlkUpload{
+	width: 200px;
+	margin: auto;
+}
+
+input#fileUser{
+	margin: 20px 0 20px 0; 
+}
+
+/* MODAL APRESENTAÇÃO DE ARQUIVOS */
+
+.contentImage{
+	
+	width: 100%;
+	margin-bottom: 3px;
+	margin-top: 5px;
+
+}
+
+.contentCaption{
+	line-height: 1;
+	margin-bottom: 5px;
+	margin-top: 1px;
+	font-weight: 600;
+	color: grey;
+	text-align: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+.contentCaption2{
+	text-align: justify;
+	border: none;
+	resize: none;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	line-height: 1;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+
+.contentLink{
+	background-color: grey;
+	color: white;
+	font-weight: 500;
+	padding: 3px 3px 3px 3px;
+	width: 100%;
+	margin: auto;
+	border-radius: 5px;
+	text-align: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.contentRow{
+	width: 100%;
+	margin: auto;
+	}
+
+.contentCol{
+	padding: 2px 2px 5px 2px;
+	box-shadow: 2px 2px 2px grey;
+	width: 23%;
+	margin: 10px auto auto 2%;
+	float: left;
+}
+
+div#modalTop{
+	margin-bottom: 20px;
+	min-height: 10%;
+}
+
+div#containerFiles{
+	margin: auto;
+	width: 100%;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #f5f5f5;
+    border-left: 1px solid #f5f5f5
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #00c853
+}
+
+/* Largura da barra de rolagem */
+::-moz-scrollbar {
+    width: 5px;
+}
+
+/* Fundo da barra de rolagem */
+::-moz-scrollbar-track-piece {
+    background-color: #f5f5f5;
+    border-left: 1px solid #f5f5f5
+}
+
+/* Cor do indicador de rolagem */
+::-moz-scrollbar-thumb:vertical,
+::-moz-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-moz-scrollbar-thumb:vertical:hover,
+::-moz-scrollbar-thumb:horizontal:hover {
+    background-color: #00c853
+}
+

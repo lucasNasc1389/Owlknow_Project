@@ -1,0 +1,84 @@
+ul(id="slide-out" class="side-nav fixed col s9 m5 l3 grey darken-4")
+	li(class="logo")
+			a(id="logo-container",class="brand-logo")
+				img(class="responsive-img", src="/img/logo_owlknow-principal.svg")
+		li
+			div(class="userView", style="")
+				if isLogged
+					a(id="link-avatar", href="#modalAvatar", class="modal-trigger")
+						img(class="circle responsive-img z-depth-2", src="/img/avatar.png" id="avatarImage")
+			div(class="userName")
+				p(id="userName", class="userName") #{session.nome}
+				h6(id="userEmail") #{session.email}
+				
+
+		li(class="search")
+			div(class="search-wrapper")
+				input(id="search", class="white-text", placeholder="Pesquisar...", type="text")
+				img(id="pesquisa", class="material-icons", src="fonts/MaterialDesignIcons/search.svg")
+				div(class="search-results")
+
+		li(class="bold")
+			a(id="sideMenu", href="#", class="waves-effect waves-green") Tópicos
+				img(id="sideMenuitem",class="material-icons left", src="fonts/MaterialDesignIcons/forum.svg")
+		li(class="bold")
+			a(id="sideMenu", href="/logout", class="waves-effect waves-green ") Sair
+				img(id="sideMenuitem",class="material-icons left", src="fonts/MaterialDesignIcons/power_settings_new.svg")
+		li(class="boldlogos")
+			div(class="updates")
+				img(id="updateIcon",class="material-icons left", src="fonts/MaterialDesignIcons/update.svg")
+				h6(id="updates") Histórico
+				hr
+				ul(id="atualizacoes")
+				
+		
+
+
+
+ul(id="dropdown1", class="dropdown-content")
+	li
+		a(href="#modalFiles", class="tooltipped modal-trigger" data-position="left", data-delay="50", data-tooltip="Arquivos enviados")
+			img(class="iconsDropdown",src="fonts/MaterialDesignIcons/arquivos.svg")
+	li
+		a(href="#!", class="tooltipped" data-position="left", data-delay="50", data-tooltip="Criar tópico")
+			img(class="iconsDropdown1",src="fonts/MaterialDesignIcons/library_add.svg") 
+	li
+		a(href="#!", class="tooltipped" data-position="left", data-delay="50", data-tooltip="Posts favoritos")
+			img(class="iconsDropdown1", src="fonts/MaterialDesignIcons/star_border.svg") 
+
+div(class="navbar-fixed")
+		nav
+			div(class="nav-wrapper green lighten-1")
+				ul(class="left")
+					li
+						a(href="#" data-activates="slide-out" class="button-collapse")
+							img(id="menuSidebar", class="material-icons", src="fonts/MaterialDesignIcons/menu.svg")
+				ul(class="right")
+					li
+						a(id="dropbutton",class="dropdown-button", href="#!", data-activates="dropdown1")
+							img(id="dropOpcoes", class="material-icons",src="fonts/MaterialDesignIcons/more_vert.svg")
+
+
+div(id="modalAvatar",class="modal modal-fixed-footer")
+	div(class="modal-content")
+		h4 Foto de perfil
+			img(id="avatarEscolhido",class="circle responsive-img z-depth-1", src="/img/avatar.png", style="width:100px;")
+			label Selecione a foto de perfil
+			br
+			input(type="file", id="avatar" accept=".jpg,png")
+			button( class="btn waves-effect" id="uploadAvatar" onclick="uploadAvatar()") Enviar
+	div(class="modal-footer")
+		a(href="#" , class="modal-action modal-close waves-effect waves-green btn-flat") Fechar
+	
+
+div(id="modalFiles",class="modal modal-fixed-footer")
+	div(class="modal-content")
+		div(id="modalTop")
+			h4(style="color:green; text-align:center;" class="right") Arquivos enviados
+			button(class="waves-effect waves-light btn left" onclick="queryDatabase();") Carregar Arquivos
+		div(id="containerFiles")
+	div(class="modal-footer")
+		a(href="#" , class="modal-action modal-close waves-effect waves-green btn-flat") Fechar
+
+scripts
+	script $(document).ready(function(){ $('.modal-trigger').leanModal();});

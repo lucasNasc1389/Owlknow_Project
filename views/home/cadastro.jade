@@ -1,0 +1,65 @@
+doctype html
+html
+head
+	meta(charset="utf-8")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="viewport", content="width=device-width, initial-scale=1")
+	meta(name="description" content="Web/app para compartilhamento de conteúdo e pesquisas acadêmicas")
+	meta(name="keywords" content="owl,know,pesquisa,estudo,escola,rede social,educação,owlknow,tcc,heroku")
+
+	link(rel="stylesheet" href="/css/style.css")
+	link(rel="stylesheet" href="/css/cadastro.css")
+	link(rel="stylesheet" href="/css/materialize.min.css")
+	link(href="" rel="stylesheet")
+
+	script(src="/js/jquery.min.js")
+	script(src="/js/materialize.min.js")
+
+
+body(class="grey darken-3")
+	div(class="row")
+		include ../partials/menuCadastro.jade
+
+	div(class="container" id="container_cad")
+		div(class="row")
+			div(class="divImage col s12 m12 l12 ")
+				img(id="logo_owlknow",class="center z-depth-3",onclick="Materialize.toast('Bem vindo! Cadastre-se para ser um Owlker',3000,'rounded')", src="/img/logo_owlknow.svg")
+			div(class="col s12 m12 l12")
+				div(class="col s12 m6 l4 offset-m3 offset-l4 center")
+					form(method="POST", action="/" , class="form_cadastro")
+
+						if messages.erro
+							br
+							each msg in messages.erro
+								b= msg
+								br
+
+						ul
+							li
+								div(class="cad col s12 m12 search-wrapper card")
+									input(class="validate", type="text", name="nome", value="#{user.nome || ''}", placeholder="Nome de usuário", required)
+									img(class="icones_cad left", src="fonts/MaterialDesignIcons/account_circle.svg") 
+							li
+								div(class="cad col s12 m12 l12 search-wrapper card")
+									input(class="validate", type="email", name="email",value="#{user.email || ''}", placeholder="Seu E-mail", required)
+									img(class="icones_cad left", src="fonts/MaterialDesignIcons/email.svg")
+							li
+								div(class="cad col s12 m12 l12 search-wrapper card")
+									input(class="validate", type="password", name="senha", placeholder="Senha", required)
+									img(class="icones_cad left", src="fonts/MaterialDesignIcons/lock.svg")
+							li
+								div(class="cad col s12 m12 l12 search-wrapper card")
+									input(class="validate", type="password", name="confirma_senha", placeholder="Confirmar senha", required)
+									img(class="icones_cad left", src="fonts/MaterialDesignIcons/lock_outline.svg")
+						
+							li
+								button(id="btnCadastrar", class="waves-effect waves-light btn-large light-green darken-1" type="submit", name="action") Cadastrar
+								
+	div(class="row" id="linha")
+		div(id="rodapePrimario", class="footer col s12 m12 l12")
+			div(class="centralizado")
+				img(class="responsive-img center" id="logo_footer", src="/img/logo_monrise-01.svg")
+
+
+ 
+block scripts

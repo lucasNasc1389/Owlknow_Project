@@ -1,0 +1,40 @@
+doctype html
+html
+head
+	meta(charset="utf-8")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	meta(name="description" content="Web/app para compartilhamento de conteúdo e pesquisas acadêmicas")
+	meta(name="keywords" content="owl,know,pesquisa,estudo,escola,rede social,educação,owlknow,tcc,heroku")
+	script(src="/js/jquery.min.js")
+	script(src="/socket.io/socket.io.js")
+	script(src="/js/ChatClientSide.js")
+	
+	
+	link(rel="stylesheet" href="/css/style.css" media="screen")
+	link(rel="stylesheet" href="/css/materialize.min.css")
+
+
+body
+	include partials/menu.jade
+	div(class="row")
+		block content
+			
+			
+		
+
+	div(class="row rodape")
+		include partials/footer.jade
+	
+
+
+	block scripts
+	script(src="/js/materialize.min.js")
+	script $(".dropdown-button").dropdown({hover:false});
+	script $('.button-collapse').sideNav({edge:'left', closeOnClick:false});
+	script $(document).ready(function(){$('input#input_text,textarea#textarea1').characterCounter();});
+	script(src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js")
+	script var config = { apiKey: "AIzaSyB0cgZNt8VetbHbiodJbPtAIFwOgCKBpRc", authDomain: "owlknow-6803b.firebaseapp.com", databaseURL: "https://owlknow-6803b.firebaseio.com", storageBucket: "owlknow-6803b.appspot.com", messagingSenderId: "769942776808" }; firebase.initializeApp(config);
+	script(src="/js/firebase.js")
+	
+	

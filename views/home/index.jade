@@ -1,0 +1,37 @@
+extends ../layout
+
+block content
+	div(class="row")
+		div(class="col s12 m12 l9 offset-l3 section-content")
+			div(id="chat")
+				
+				
+					
+	div(class="row")
+		div(id="div-messager" class="col s12 m12 l9 offset-l3")
+			div(class="emoji col s3 m2 l2 left")
+				a(href="#")
+					img(id="emoticon", href="",class=" right", src="/img/emoticon.svg")
+				a(id="link-file", href="#modalUpload", class="modal-trigger")
+					img(id="fileUp", href="",class=" right ", src="/img/anexo.svg")
+			div(class="div-background col s7 m8 l8")
+				input(id="nome", type="hidden", value="#{session.nome}")
+				input(id="email", type="hidden", value="#{session.email}")
+				textarea(id="mensagem" class=""  rows="1" placeholder="Seu texto aqui...")
+			div(class="button-div col s2 m2 l2 right")
+				img(id="owlk" src="/img/enviar.svg" onclick="enviar();", name="btnEnviar", class="botaoEnviar" title="Enviar")
+			
+	div(id="modalUpload",class="modal modal-fixed-footer")
+		div(class="modal-content")
+			div(id="img-owlkUpload")
+				img(class="responsive-img center", id="owlkUp" src="/img/logo upload-01.png")
+			div
+				input(type="file", id="fileUser")
+				input(class="inputs_file" id="legenda" type="text" placeholder="Legenda")
+				input(class="inputs_file" id="comentario" type="text" placeholder="Comentário")
+				button( class="btn waves-effect" id="uploadFile" onclick="uploadFile()") Enviar
+		div(class="modal-footer")
+			a(href="#" , class="modal-action modal-close waves-effect waves-green btn-flat") Fechar
+	
+	block scripts
+		script $(document).ready(function(){ $('.modal-trigger').leanModal();});
